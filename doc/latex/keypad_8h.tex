@@ -1,0 +1,140 @@
+\hypertarget{keypad_8h}{}\section{C\+:/\+Users/\+Hunterx\+Pokemon/\+Documents/\+Workspace/\+Homebrew/\+G\+B\+A/\+Demos/\+Template/include/keypad.h File Reference}
+\label{keypad_8h}\index{C\+:/\+Users/\+Hunterx\+Pokemon/\+Documents/\+Workspace/\+Homebrew/\+G\+B\+A/\+Demos/\+Template/include/keypad.\+h@{C\+:/\+Users/\+Hunterx\+Pokemon/\+Documents/\+Workspace/\+Homebrew/\+G\+B\+A/\+Demos/\+Template/include/keypad.\+h}}
+
+
+Manage Key Input.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}registers.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{keypad_8h_a024e62650f02bfd64a4ce2b158ec2dd7}\label{keypad_8h_a024e62650f02bfd64a4ce2b158ec2dd7}} 
+\#define {\bfseries K\+E\+Y\+\_\+A}~1 $<$$<$ 0  /$\ast$ b\+\_\+\+X\+X\+XX X\+X00 0000 0001 $\ast$/
+\item 
+\mbox{\Hypertarget{keypad_8h_ad2ae94d1ffed5c399aa6f8c40c0fc3c7}\label{keypad_8h_ad2ae94d1ffed5c399aa6f8c40c0fc3c7}} 
+\#define {\bfseries K\+E\+Y\+\_\+B}~1 $<$$<$ 1  /$\ast$ b\+\_\+\+X\+X\+XX X\+X00 0000 0010 $\ast$/
+\item 
+\mbox{\Hypertarget{keypad_8h_aa8d060e03fe1ea2c54b64698c1b6c8b5}\label{keypad_8h_aa8d060e03fe1ea2c54b64698c1b6c8b5}} 
+\#define {\bfseries K\+E\+Y\+\_\+\+S\+E\+L\+E\+CT}~1 $<$$<$ 2  /$\ast$ b\+\_\+\+X\+X\+XX X\+X00 0000 0100 $\ast$/
+\item 
+\mbox{\Hypertarget{keypad_8h_a90b3ea4616669bfe7fab021c68db7abf}\label{keypad_8h_a90b3ea4616669bfe7fab021c68db7abf}} 
+\#define {\bfseries K\+E\+Y\+\_\+\+S\+T\+A\+RT}~1 $<$$<$ 3  /$\ast$ b\+\_\+\+X\+X\+XX X\+X00 0000 1000 $\ast$/
+\item 
+\mbox{\Hypertarget{keypad_8h_a004194639b9ad76cea01d9e93716d4d6}\label{keypad_8h_a004194639b9ad76cea01d9e93716d4d6}} 
+\#define {\bfseries K\+E\+Y\+\_\+\+R\+I\+G\+HT}~1 $<$$<$ 4  /$\ast$ b\+\_\+\+X\+X\+XX X\+X00 0001 0000 $\ast$/
+\item 
+\mbox{\Hypertarget{keypad_8h_af4d1b8a2912354646c74cf36c69f8223}\label{keypad_8h_af4d1b8a2912354646c74cf36c69f8223}} 
+\#define {\bfseries K\+E\+Y\+\_\+\+L\+E\+FT}~1 $<$$<$ 5  /$\ast$ b\+\_\+\+X\+X\+XX X\+X00 0010 0000 $\ast$/
+\item 
+\mbox{\Hypertarget{keypad_8h_afa086fc916a81e7fd348ec00cf786916}\label{keypad_8h_afa086fc916a81e7fd348ec00cf786916}} 
+\#define {\bfseries K\+E\+Y\+\_\+\+UP}~1 $<$$<$ 6  /$\ast$ b\+\_\+\+X\+X\+XX X\+X00 0100 0000 $\ast$/
+\item 
+\mbox{\Hypertarget{keypad_8h_a203163bc0189184a1de6ca8d1e53c6bf}\label{keypad_8h_a203163bc0189184a1de6ca8d1e53c6bf}} 
+\#define {\bfseries K\+E\+Y\+\_\+\+D\+O\+WN}~1 $<$$<$ 7  /$\ast$ b\+\_\+\+X\+X\+XX X\+X00 1000 0000 $\ast$/
+\item 
+\mbox{\Hypertarget{keypad_8h_aa020da9e48a194889ac72f94408b3c25}\label{keypad_8h_aa020da9e48a194889ac72f94408b3c25}} 
+\#define {\bfseries K\+E\+Y\+\_\+R}~1 $<$$<$ 8  /$\ast$ b\+\_\+\+X\+X\+XX X\+X01 0000 0000 $\ast$/
+\item 
+\mbox{\Hypertarget{keypad_8h_a600bb1ce7eb7b6ca4dcbb41546c32ec5}\label{keypad_8h_a600bb1ce7eb7b6ca4dcbb41546c32ec5}} 
+\#define {\bfseries K\+E\+Y\+\_\+L}~1 $<$$<$ 9  /$\ast$ b\+\_\+\+X\+X\+XX X\+X10 0000 0000 $\ast$/
+\item 
+\mbox{\Hypertarget{keypad_8h_a35fa3fdfb312c5dd1d95498d913daeb2}\label{keypad_8h_a35fa3fdfb312c5dd1d95498d913daeb2}} 
+\#define {\bfseries K\+E\+Y\+\_\+\+A\+NY}~0x03\+F\+F  /$\ast$ b\+\_\+0000 0011 1111 1111 $\ast$/
+\item 
+\mbox{\Hypertarget{keypad_8h_a2ba60980b1dd2232b89a89d48a108d89}\label{keypad_8h_a2ba60980b1dd2232b89a89d48a108d89}} 
+\#define {\bfseries K\+E\+Y\+\_\+\+D\+O\+W\+N\+\_\+\+N\+OW}(key)~($\sim$(R\+E\+G\+\_\+\+K\+E\+Y\+\_\+\+I\+N\+P\+UT) \& key)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{keypad_8h_a0093edca5043c77ca9581408acf288e6}\label{keypad_8h_a0093edca5043c77ca9581408acf288e6}} 
+enum {\bfseries e\+Key\+Index} \{ \newline
+{\bfseries K\+I\+\_\+A} =0, 
+{\bfseries K\+I\+\_\+B}, 
+{\bfseries K\+I\+\_\+\+S\+E\+L\+E\+CT}, 
+{\bfseries K\+I\+\_\+\+S\+T\+A\+RT}, 
+\newline
+{\bfseries K\+I\+\_\+\+R\+I\+G\+HT}, 
+{\bfseries K\+I\+\_\+\+L\+E\+FT}, 
+{\bfseries K\+I\+\_\+\+UP}, 
+{\bfseries K\+I\+\_\+\+D\+O\+WN}, 
+\newline
+{\bfseries K\+I\+\_\+R}, 
+{\bfseries K\+I\+\_\+L}, 
+{\bfseries K\+I\+\_\+\+M\+AX}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{keypad_8h_a7f47d79ad687e12318de48a226be7a13}\label{keypad_8h_a7f47d79ad687e12318de48a226be7a13}} 
+I\+N\+L\+I\+NE void {\bfseries key\+\_\+poll} ()
+\item 
+\mbox{\Hypertarget{keypad_8h_ae27ee2cdbe9bbc2636bd94481d844755}\label{keypad_8h_ae27ee2cdbe9bbc2636bd94481d844755}} 
+I\+N\+L\+I\+NE u32 {\bfseries get\+\_\+key\+\_\+curr\+\_\+state} ()
+\item 
+\mbox{\Hypertarget{keypad_8h_aaf2a355d79c01ed8387bddd51a06a70d}\label{keypad_8h_aaf2a355d79c01ed8387bddd51a06a70d}} 
+I\+N\+L\+I\+NE u32 {\bfseries get\+\_\+key\+\_\+prev\+\_\+state} ()
+\item 
+\mbox{\Hypertarget{keypad_8h_a8b2062de0d3271fc31097aaaa53b645f}\label{keypad_8h_a8b2062de0d3271fc31097aaaa53b645f}} 
+I\+N\+L\+I\+NE u32 {\bfseries key\+\_\+is\+\_\+down} (u32 key)
+\item 
+\mbox{\Hypertarget{keypad_8h_a2219dd87334c2f3153dd6a8c36bc0d0e}\label{keypad_8h_a2219dd87334c2f3153dd6a8c36bc0d0e}} 
+I\+N\+L\+I\+NE u32 {\bfseries key\+\_\+is\+\_\+up} (u32 key)
+\item 
+\mbox{\Hypertarget{keypad_8h_a2dd2fd9d8d036f751d32ebb7491dee2a}\label{keypad_8h_a2dd2fd9d8d036f751d32ebb7491dee2a}} 
+I\+N\+L\+I\+NE u32 {\bfseries key\+\_\+was\+\_\+down} (u32 key)
+\item 
+\mbox{\Hypertarget{keypad_8h_ad358946fcf38c56fad170e4729b3644d}\label{keypad_8h_ad358946fcf38c56fad170e4729b3644d}} 
+I\+N\+L\+I\+NE u32 {\bfseries key\+\_\+was\+\_\+up} (u32 key)
+\item 
+\mbox{\Hypertarget{keypad_8h_a78cb3797b80b04b090dab2066695a30f}\label{keypad_8h_a78cb3797b80b04b090dab2066695a30f}} 
+I\+N\+L\+I\+NE u32 {\bfseries key\+\_\+transit} (u32 key)
+\item 
+\mbox{\Hypertarget{keypad_8h_abc951632bc0b2d17a4964a88f7170a71}\label{keypad_8h_abc951632bc0b2d17a4964a88f7170a71}} 
+I\+N\+L\+I\+NE u32 {\bfseries key\+\_\+held} (u32 key)
+\item 
+\mbox{\Hypertarget{keypad_8h_aea1ba6f6a6a3159b33b29c68b1258ec1}\label{keypad_8h_aea1ba6f6a6a3159b33b29c68b1258ec1}} 
+I\+N\+L\+I\+NE u32 {\bfseries key\+\_\+hit} (u32 key)
+\item 
+\mbox{\Hypertarget{keypad_8h_a54844a9a5ac545b6d02da398b785228b}\label{keypad_8h_a54844a9a5ac545b6d02da398b785228b}} 
+I\+N\+L\+I\+NE u32 {\bfseries key\+\_\+released} (u32 key)
+\item 
+\mbox{\Hypertarget{keypad_8h_ac302dd57ee153f7325f1fa4803ce38fa}\label{keypad_8h_ac302dd57ee153f7325f1fa4803ce38fa}} 
+I\+N\+L\+I\+NE int {\bfseries key\+\_\+tri\+\_\+horz} ()
+\item 
+\mbox{\Hypertarget{keypad_8h_a2dc03054091acb662d4f6eac81ac139b}\label{keypad_8h_a2dc03054091acb662d4f6eac81ac139b}} 
+I\+N\+L\+I\+NE int {\bfseries key\+\_\+tri\+\_\+vert} ()
+\item 
+\mbox{\Hypertarget{keypad_8h_af1224350d39c244abcc0758e20c95662}\label{keypad_8h_af1224350d39c244abcc0758e20c95662}} 
+I\+N\+L\+I\+NE int {\bfseries key\+\_\+tri\+\_\+shoulder} ()
+\item 
+\mbox{\Hypertarget{keypad_8h_a45fb8d396da20dfe13139fd29b0e5c64}\label{keypad_8h_a45fb8d396da20dfe13139fd29b0e5c64}} 
+I\+N\+L\+I\+NE int {\bfseries key\+\_\+tri\+\_\+fire} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{keypad_8h_a27988446008d81bdad52ba6d4f0e014c}\label{keypad_8h_a27988446008d81bdad52ba6d4f0e014c}} 
+u16 {\bfseries g\+\_\+key\+\_\+curr}
+\item 
+\mbox{\Hypertarget{keypad_8h_a86ebb92379af390d5ef53c1356ed7792}\label{keypad_8h_a86ebb92379af390d5ef53c1356ed7792}} 
+u16 {\bfseries g\+\_\+key\+\_\+prev}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manage Key Input. 
+
+\begin{DoxyDate}{Date}
+28.\+10.\+2017 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Dark\+Gengar \href{https://github.com/DarkGengar}{\tt https\+://github.\+com/\+Dark\+Gengar}
+\end{DoxyAuthor}
+This header file contain functions and defintions to manage the key input of the G\+BA. \begin{DoxySeeAlso}{See also}
+\hyperlink{keypad_8c}{keypad.\+c} 
+\end{DoxySeeAlso}

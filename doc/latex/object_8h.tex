@@ -1,0 +1,60 @@
+\hypertarget{object_8h}{}\section{C\+:/\+Users/\+Hunterx\+Pokemon/\+Documents/\+Workspace/\+Homebrew/\+G\+B\+A/\+Demos/\+Template/include/object.h File Reference}
+\label{object_8h}\index{C\+:/\+Users/\+Hunterx\+Pokemon/\+Documents/\+Workspace/\+Homebrew/\+G\+B\+A/\+Demos/\+Template/include/object.\+h@{C\+:/\+Users/\+Hunterx\+Pokemon/\+Documents/\+Workspace/\+Homebrew/\+G\+B\+A/\+Demos/\+Template/include/object.\+h}}
+
+
+Manage Objects.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structobj__attrs}{obj\+\_\+attrs}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{object_8h_a7cffdcd24e3f434913b8033fa61a6ae9}\label{object_8h_a7cffdcd24e3f434913b8033fa61a6ae9}} 
+\#define {\bfseries O\+B\+J\+E\+C\+T\+\_\+\+A\+T\+T\+R0\+\_\+\+Y\+\_\+\+M\+A\+SK}~0x0\+FF
+\item 
+\mbox{\Hypertarget{object_8h_a4efc4280d1055b00a24d61e836606672}\label{object_8h_a4efc4280d1055b00a24d61e836606672}} 
+\#define {\bfseries O\+B\+J\+E\+C\+T\+\_\+\+A\+T\+T\+R1\+\_\+\+X\+\_\+\+M\+A\+SK}~0x1\+FF
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{object_8h_ae5680f446dbd1566596984d4e79c40a2}\label{object_8h_ae5680f446dbd1566596984d4e79c40a2}} 
+struct \hyperlink{structobj__attrs}{obj\+\_\+attrs} {\bfseries \+\_\+\+\_\+attribute\+\_\+\+\_\+} ((packed, aligned(4))) \hyperlink{structobj__attrs}{obj\+\_\+attrs}
+\item 
+\mbox{\Hypertarget{object_8h_a32972c16e51e51bfc727a986ce99eea1}\label{object_8h_a32972c16e51e51bfc727a986ce99eea1}} 
+I\+N\+L\+I\+NE void {\bfseries set\+\_\+object\+\_\+position} (volatile \hyperlink{structobj__attrs}{obj\+\_\+attrs} $\ast$object, int x, int y)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{object_8h_a5589af89e7d66ff12236e7c94f6153de}\label{object_8h_a5589af89e7d66ff12236e7c94f6153de}} 
+u16 {\bfseries attr0}
+\item 
+\mbox{\Hypertarget{object_8h_acef292101bc635e23be446973414de11}\label{object_8h_acef292101bc635e23be446973414de11}} 
+u16 {\bfseries attr1}
+\item 
+\mbox{\Hypertarget{object_8h_a9d4182ea0a6965bfa844d47f9de9b20e}\label{object_8h_a9d4182ea0a6965bfa844d47f9de9b20e}} 
+u16 {\bfseries attr2}
+\item 
+\mbox{\Hypertarget{object_8h_aa94b12c4dc26f2a62469a0e89f216cf9}\label{object_8h_aa94b12c4dc26f2a62469a0e89f216cf9}} 
+u16 {\bfseries pad}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Manage Objects. 
+
+\begin{DoxyDate}{Date}
+28.\+10.\+2017 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Dark\+Gengar \href{https://github.com/DarkGengar}{\tt https\+://github.\+com/\+Dark\+Gengar}
+\end{DoxyAuthor}
+This header file contain definitions, structures and functions to handle objects. \begin{DoxySeeAlso}{See also}
+\hyperlink{object_8c}{object.\+c} 
+\end{DoxySeeAlso}

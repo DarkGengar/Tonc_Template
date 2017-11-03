@@ -1,0 +1,47 @@
+\hypertarget{memory_8h}{}\section{C\+:/\+Users/\+Hunterx\+Pokemon/\+Documents/\+Workspace/\+Homebrew/\+G\+B\+A/\+Demos/\+Template/include/memory.h File Reference}
+\label{memory_8h}\index{C\+:/\+Users/\+Hunterx\+Pokemon/\+Documents/\+Workspace/\+Homebrew/\+G\+B\+A/\+Demos/\+Template/include/memory.\+h@{C\+:/\+Users/\+Hunterx\+Pokemon/\+Documents/\+Workspace/\+Homebrew/\+G\+B\+A/\+Demos/\+Template/include/memory.\+h}}
+
+
+Memory Addresses.  
+
+
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{memory_8h_a86a482f5eb3c65d996fc015f2db6167f}\label{memory_8h_a86a482f5eb3c65d996fc015f2db6167f}} 
+\#define {\bfseries M\+E\+M\+\_\+\+IO}~0x04000000
+\item 
+\mbox{\Hypertarget{memory_8h_a45a61fa888c1576d9199fbd8431c5a57}\label{memory_8h_a45a61fa888c1576d9199fbd8431c5a57}} 
+\#define {\bfseries M\+E\+M\+\_\+\+P\+AL}~0x05000000
+\item 
+\mbox{\Hypertarget{memory_8h_a9d450c2ddff4681935ace861ee9ee792}\label{memory_8h_a9d450c2ddff4681935ace861ee9ee792}} 
+\#define {\bfseries M\+E\+M\+\_\+\+V\+R\+AM}~0x06000000
+\item 
+\mbox{\Hypertarget{memory_8h_a5200a9ffa9cfd59ef72d48e5971801da}\label{memory_8h_a5200a9ffa9cfd59ef72d48e5971801da}} 
+\#define {\bfseries M\+E\+M\+\_\+\+O\+AM}~0x07000000
+\item 
+\mbox{\Hypertarget{memory_8h_a83ae09123515d0d5d781637d5e5e5d97}\label{memory_8h_a83ae09123515d0d5d781637d5e5e5d97}} 
+\#define {\bfseries oam\+\_\+mem}~((volatile \hyperlink{structobj__attrs}{obj\+\_\+attrs} $\ast$)M\+E\+M\+\_\+\+O\+AM)
+\item 
+\mbox{\Hypertarget{memory_8h_ad7614b181363750123607174138868cc}\label{memory_8h_ad7614b181363750123607174138868cc}} 
+\#define {\bfseries tile\+\_\+mem}~((volatile tile\+\_\+block $\ast$)M\+E\+M\+\_\+\+V\+R\+AM)
+\item 
+\mbox{\Hypertarget{memory_8h_acc911dc18792a92ef2da69160b328b81}\label{memory_8h_acc911dc18792a92ef2da69160b328b81}} 
+\#define {\bfseries vid\+\_\+mem}~((u16$\ast$)M\+E\+M\+\_\+\+V\+R\+AM)
+\item 
+\mbox{\Hypertarget{memory_8h_a7e052a8750be871bcf559896b13d16a4}\label{memory_8h_a7e052a8750be871bcf559896b13d16a4}} 
+\#define {\bfseries object\+\_\+palette\+\_\+mem}~((volatile rgb15 $\ast$)(M\+E\+M\+\_\+\+P\+AL + 0x200))
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Memory Addresses. 
+
+\begin{DoxyDate}{Date}
+28.\+10.\+2017 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Dark\+Gengar \href{https://github.com/DarkGengar}{\tt https\+://github.\+com/\+Dark\+Gengar}
+\end{DoxyAuthor}
+Defines memory addresses of the G\+BA hardware. 

@@ -1,0 +1,5 @@
+arm-none-eabi-gcc -c template.c -mthumb-interwork -mthumb -O2 -Wall -fno-strict-aliasing -o template.o
+arm-none-eabi-gcc template.o -mthumb-interwork -mthumb -specs=gba.specs -o template.elf
+arm-none-eabi-objcopy -v -O binary template.elf template.gba
+copy from `template.elf' [elf32-littlearm] to `template.gba' [binary]
+ROM fixed!
